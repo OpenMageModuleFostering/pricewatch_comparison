@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+        <reference name="content">
+            <block type="comparison/adminhtml_popup" template="pricewatch/comparison/popup.phtml" name="pricewatch_notification" as="pricewatch_notification" before="-" />
+        </reference>
+    </default>
+</layout>

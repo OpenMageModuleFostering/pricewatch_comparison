@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Pricewatch_Comparison",
+    "type": "magento-module",
+    "license": "Open-Software-License-(OSL-3.0)",
+    "homepage": "",
+    "description": "Pricewatch Comparison module",
+    "authors": [
+    {
+        "name": "Pricewatch.com.ng",
+        "email": "info@pricewatch.com.ng"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

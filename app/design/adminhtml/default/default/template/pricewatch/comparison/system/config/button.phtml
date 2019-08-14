@@ -1,0 +1,36 @@
+<script type="text/javascript">
+    //<![CDATA[
+    function syncproducts() {
+        new Ajax.Request('<?php echo $this->getAjaxCheckUrl() ?>', {
+            method:     'get',
+            onCreate: function(){
+                document.getElementById('sync-result').innerHTML = '';                
+            },
+            onSuccess: function(transport){ 
+            var response = JSON.parse(transport.responseText)
+            console.log(response);
+                if (response.success){
+                    document.getElementById('sync-result').innerHTML = response.msg;
+                    document.getElementById('sync-result').style.color = '#008000';
+                } else{
+                    if(response.msg){
+                        document.getElementById('sync-result').innerHTML = response.msg;
+                        document.getElementById('sync-result').style.color = '#ff0000';
+                    } else {
+                        document.getElementById('sync-result').innerHTML = 'Some error occured, please try again.';
+                        document.getElementById('sync-result').style.color = '#ff0000';
+                    }
+                }
+            },
+            onFailure: function(){
+                document.getElementById('sync-result').innerHTML = 'Some error occured, please try again.';
+                document.getElementById('sync-result').style.color = '#ff0000';
+            }
+        });
+    }
+    //]]>
+</script>
+ 
+<?php echo $this->getButtonHtml() ?>
+<p class="note"><span>You don't need to sync the product manually all time, just do it first time and when ever you update/create mass products</span></p>
+<div style="margin-top:10px;padding-top:10px;font-size:12px;font-weight:bold;" id="sync-result"></div>

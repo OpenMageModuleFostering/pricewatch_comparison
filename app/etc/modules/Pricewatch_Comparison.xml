@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Pricewatch_Comparison>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Pricewatch_Comparison>
+    </modules>
+</config> 

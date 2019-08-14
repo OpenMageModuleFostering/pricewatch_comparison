@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <pricewatch translate="label" module="comparison">
+            <label><![CDATA[<div><img src="data:image/png;base64,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"/></div>]]></label>
+            <sort_order>100</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+        </pricewatch>
+    </tabs>
+    <sections>
+        <comparison translate="label">
+            <label><![CDATA[PriceWatch Comparison]]></label>
+            <tab>pricewatch</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>100</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label">
+                    <label>General Settings</label>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <sort_order>1</sort_order>
+                    <fields>
+                        <help translate="label">
+                            <label></label>
+                            <frontend_type>label</frontend_type>
+                            <frontend_model>comparison/adminhtml_system_config_form_help</frontend_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </help>
+                        <enabled translate="label">
+                            <label>Enable</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enabled>
+                        <token translate="label">
+                            <label>Merchant Token</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>required-entry</validate>
+                            <depends><enabled>1</enabled></depends>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </token>						  
+                        <mackey translate="label">
+                            <label>Website Key</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>required-entry</validate>
+                            <depends><enabled>1</enabled></depends>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </mackey>
+                        <upload translate="label">
+                            <label>Upload Product on Pricewatch</label>
+                            <frontend_type>button</frontend_type>
+                            <frontend_model>comparison/adminhtml_system_config_form_button</frontend_model>
+                            <depends><enabled>1</enabled></depends>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </upload>
+                    </fields>
+                </general>
+            </groups>
+        </comparison>
+    </sections>
+</config>

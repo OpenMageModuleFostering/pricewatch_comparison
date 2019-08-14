@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Pricewatch_Comparison</name>
+    <version>1.0.0</version>
+    <stability>beta</stability>
+    <license uri="http://opensource.org/licenses/OSL-3.0">Open Software License (OSL 3.0)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Pricewatch Comparison module</summary>
+    <description>Pricewatch Comparison module</description>
+    <notes>Pricewatch Comparison module</notes>
+    <authors><author><name>Pricewatch.com.ng</name><user>PricewatchComparison</user><email>info@pricewatch.com.ng</email></author></authors>
+    <date>2016-10-11</date>
+    <time>09:30:33</time>
+    <contents><target name="magelocal"><dir name="Pricewatch"><dir name="Comparison"><dir name="Block"><dir name="Adminhtml"><file name="Popup.php" hash="bcc6f6b86105bc86e21c6769619b8c18"/><dir name="System"><dir name="Config"><dir name="Form"><file name="Button.php" hash="7aeaac98da66f28058175e1fa78b808a"/><file name="Help.php" hash="0272718b9330de8fdafb5c0d267b97d6"/></dir><file name="Upload.php" hash="3e4b5df051bccecc33fd53f95cee0ad6"/></dir></dir></dir><file name="Comparison.php" hash="92a9fbc97819460cb73ec0b1bf275fb0"/></dir><dir name="Helper"><file name="Data.php" hash="6857aff271cc9b7109588361ede5818f"/></dir><dir name="Model"><file name="Api.php" hash="b471fba7a7449baf0e32ca41b688d195"/><file name="Comparison.php" hash="3f76ee465a24524521cc61b2eae0934a"/><dir name="Mysql4"><dir name="Comparison"><file name="Collection.php" hash="9669e6921d1347b77ffa65473e45e15b"/></dir><file name="Comparison.php" hash="06a0a1561bea12182e88221bd5b27584"/><dir name="Status"><file name="Collection.php" hash="062326d0528b1d8fa2b01c9df5152738"/></dir><file name="Status.php" hash="abc5fb9fab6f871ba773127d428ef07d"/></dir><file name="Observer.php" hash="3e83821349b140e852b275ce8cae1e9a"/><file name="Review.php" hash="5012e6fbc5da6d831aecbdcd53efde84"/><file name="Status.php" hash="4eeef84fcf3e2e76a0f3bc7c29d29ab6"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="ComparisonController.php" hash="caaaa406b85665b567b4768bceb7dda5"/></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="148672dfb241b09b4c53fc8166729055"/><file name="config.xml" hash="637f6da3d1fb7cef9346969986136f1e"/><file name="system.xml" hash="47289ffe5fc835ee90f1c70dd5614087"/></dir><dir name="sql"><dir name="comparison_setup"><file name="mysql4-install-0.1.0.php" hash="eb99810fc7a3d6cec0638206b748d2b7"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Pricewatch_Comparison.xml" hash="2e9c17ca138c813761745d85b511591d"/></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><dir name="pricewatch"><file name="comparison.xml" hash="8d97149c3a9dd98e256aeb4298646c41"/></dir></dir><dir name="template"><dir name="pricewatch"><dir name="comparison"><file name="popup.phtml" hash="eece9b6ebe3769cab96426fca7a90957"/><dir name="system"><dir name="config"><file name="button.phtml" hash="26d738862c3c632a4c4be574578a5433"/></dir></dir></dir></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.0.0</min><max>5.7.0</max></php></required></dependencies>
+</package>

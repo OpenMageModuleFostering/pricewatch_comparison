@@ -1,0 +1,46 @@
+<?php if ($this->canShow()): ?>
+<?php Mage::getSingleton('core/session')->setPricewatchNotification('NO'); ?>
+    <script type="text/javascript">
+    //<![CDATA[
+        var messagePopupClosed = false;
+        function openMessagePopup() {
+            var height = $('html-body').getHeight();
+            $('pricewatch-popup-window-mask').setStyle({'height':height+'px'});
+            toggleSelectsUnderBlock($('pricewatch-popup-window-mask'), false);
+            Element.show('pricewatch-popup-window-mask');
+            $('pricewatch-popup-window').addClassName('show');
+        }
+
+        function closeMessagePopup() {            
+            toggleSelectsUnderBlock($('pricewatch-popup-window-mask'), true);
+            Element.hide('pricewatch-popup-window-mask');
+            $('pricewatch-popup-window').removeClassName('show');
+            messagePopupClosed = true;
+        }
+        
+        Event.observe(window, 'load', openMessagePopup);
+        Event.observe(window, 'keyup', function(evt) {
+            if(messagePopupClosed) return;
+            var code;
+            if (evt.keyCode) code = evt.keyCode;
+            else if (evt.which) code = evt.which;
+            if (code == Event.KEY_ESC) {
+                closeMessagePopup();
+            }
+        });
+    //]]>
+    </script>
+    <div id="pricewatch-popup-window-mask" style="display:none;"></div>
+    <div id="pricewatch-popup-window" class="message-popup">
+        <div class="message-popup-head">
+            <a href="#" onclick="closeMessagePopup(); return false;" title="Close"><span>Close</span></a>
+            <h2>Pricewatch Product Sync Alert</h2>
+        </div>
+        <div class="message-popup-content">
+            <div class="message">
+                <span class="message-icon message-<?php echo $this->getSeverityText();?>" style="background-image:url(<?php echo $this->getSeverityIconsUrl() ?>);"><?php echo $this->getSeverityText();?></span>            
+                <p class="message-text">The Pricewatch Comparison service requires that you initiate a manual sync. Please go <a href="<?php echo Mage::helper("adminhtml")->getUrl('adminhtml/system_config/edit/section/comparison')?>">here</a> and click on the sync button.</p>
+            </div>
+        </div>
+    </div>
+<?php endif; ?>
